@@ -1,0 +1,19 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  background: #F5F7FA;
+}
+.container{
+  max-width: 1200px;
+  background: #FFFFFF;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.sidebar{
+  background: #1E2939;
+}
+.main_content{
+  padding: 105px 88px;
+}
+/* All */
