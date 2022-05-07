@@ -10,10 +10,29 @@ body{
   margin: 0 auto;
   padding: 40px 0;
 }
-.sidebar{
-  background: #1E2939;
-}
+
 .main_content{
   padding: 105px 88px;
 }
-/* All */
+/* sidebar */
+.contacts,
+.tech-skills,
+.soft-skills{
+  margin-left: 40px;
+}
+.sidebar{
+  background: #1E2939;
+  color: #FFFFFF;
+  padding-top: 40px;
+}
+  .photo{
+    width: 370px;
+    min-height: 354px;
+  }
+  /* contacts */
+  .contacts{
+    margin-top: 51px;
+  }
+  .contact_heading{
+
+  }
