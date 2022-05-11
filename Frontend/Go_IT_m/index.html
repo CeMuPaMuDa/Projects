@@ -4,141 +4,163 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 		<title>Resume</title>
 	</head>
 
 	<body>
 		<!-- * container * -->
-		<div>
+		<div class="container">
 			<!-- * sidebar * -->
-			<aside>
+			<aside class="sidebar">
 				<!-- * foto * -->
-				<img src="./img/20200125_140914.jpg" alt="user_foto" width="370" />
+				<img class="photo" src="./img/20200125_140914.jpg" alt="user_foto" />
 				<!-- * contacts * -->
-				<div>
-					<h3>Контактні дані</h3>
-					<ul>
-						<li>
-							C:
+				<div class="contacts">
+					<h3 class="sidebar_title">Сontacts</h3>
+					<ul class="contact_list">
+						<li class="contact_list__item">
 							<a href="tel:+380633767792">+380633767792</a>
 						</li>
-						<li>
-							E:
+						<li class="contact_list__item">
 							<a href="mailto:zverasik@gmail.com">zverasik@gmail.com</a>
 						</li>
 					</ul>
 				</div>
-        <!-- * tech_skills * -->
-        <div>
-          <h3>Tech Skills</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Git</li>
-            <li>Ruby/Rails</li>
-            <li>PostgreSQL</li>
-            <li>RSpec</li>
-          </ul>
-        </div>
-        <!-- TODO soft_skills * -->
-        <div>
-          <h3>Soft Skills</h3>
-          <ul>
-            <li>Scrum</li>
-            <li>Agile</li>
-            <li>GTD</li>
-            <li>Teamwork</li>
-          </ul>
-        </div>
+				<!-- * tech_skills * -->
+				<div class="tech-skills">
+					<h3 class="sidebar_title">Tech Skills</h3>
+					<ul class="sidebar-skills_list">
+						<li class="sidebar-skills_list__item"><span class="sidebar_text">HTML</span></li>
+						<li class="sidebar-skills_list__item"><span class="sidebar_text">CSS</span></li>
+						<li class="sidebar-skills_list__item"><span class="sidebar_text">JavaScript</span></li>
+						<li class="sidebar-skills_list__item"><span class="sidebar_text">Git</span></li>
+						<li class="sidebar-skills_list__item"><span class="sidebar_text">Ruby/Rails</span></li>
+						<li class="sidebar-skills_list__item"><span class="sidebar_text">PostgreSQL</span></li>
+						<li class="sidebar-skills_list__item"><span class="sidebar_text">RSpec</span></li>
+					</ul>
+				</div>
+				<!-- TODO soft_skills * -->
+				<div class="soft-skills">
+					<h3 class="sidebar_title">Soft Skills</h3>
+					<ul class="sidebar-skills_list">
+						<li class="sidebar-skills_list__item">
+							<span class="sidebar_text">Scrum</span>
+						</li>
+						<li class="sidebar-skills_list__item">
+							<span class="sidebar_text">Agile</span>
+						</li>
+						<li class="sidebar-skills_list__item">
+							<span class="sidebar_text">GTD</span>
+						</li>
+						<li class="sidebar-skills_list__item">
+							<span class="sidebar_text">Teamwork</span>
+						</li>
+					</ul>
+				</div>
 			</aside>
 			<!-- * main_content * -->
-			<main>
+			<main class="main_content">
 				<!-- * about * -->
-				<div>
-					<h2>Розробник</h2>
-					<h1>Віра Збітнєва</h1>
-					<p>
+				<div class="about">
+					<h2 class="about_title">Developer</h2>
+					<h1 class="about_name">Vira Zbitnyeva</h1>
+					<p class="about_text">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
 						dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus
 						vel facilisis.
 					</p>
 				</div>
 				<!-- * projects * -->
-				<div>
-					<h3>Projects</h3>
-					<ol>
-						<li>
-							<a href="https://hellenglish.goit.global/">https://hellenglish.goit.global/</a>
-							.........................[ HTML5, CSS3 ]
+				<div class="project">
+					<h3 class="main_title">Projects</h3>
+					<ol class="project_list">
+						<li class="project_list__item">
+							<a class="project_list__link" href="https://hellenglish.goit.global/">
+								https://hellenglish.goit.global/..............................
+							</a>
+							[
+							<span class="project_tech">HTML5, CSS3</span>
+							]
 						</li>
-						<li>
-							<a href="https://cryptohub.goit.global/">https://cryptohub.goit.global/</a>
-							..........................[ JavaScript ]
+						<li class="project_list__item">
+							<a class="project_list__link" href="https://cryptohub.goit.global/">
+								https://cryptohub.goit.global/...............................
+							</a>
+							[
+							<span class="project_tech">JavaScript</span>
+							]
 						</li>
-						<li>
-							<a href="https://kidslike.goit.global/">https://kidslike.goit.global/</a>
-							..............................[ React.js, Node.js ]
+						<li class="project_list__item">
+							<a class="project_list__link" href="https://kidslike.goit.global/">
+								https://kidslike.goit.global/.....................................
+							</a>
+							[
+							<span class="project_tech">React.js, Node.js</span>
+							]
 						</li>
 					</ol>
 				</div>
 				<!-- * work_experience * -->
-				<div>
-					<h3>Досвід роботи</h3>
+				<div class="work">
+					<h3 class="main_title">Work experience</h3>
 					<!-- * Company 1 * -->
-					<div>
-						<h4>Спеціаліст відділу технічної підтримки клієнтів - юридичних осіб</h4>
-						<p>Листопад 2019 - Грудень 2021 | АТ "Альфа-Банк" Україна, Черкаси</p>
-						<ul>
-							<li>Консультація портфелю клієнтів по банківським питанням</li>
-							<li>Супроводження і моніторинг успішної обробки гривневих, валютних операцій, з/п відомостей</li>
-							<li>Супроводження і консультація по питанням погодження валютних контрактів</li>
-							<li>Залучення відділів до вирішення питання клієнта</li>
-							<li>Допомога в проведенні операцій з банківськими картами</li>
-							<li>Консультація по технічним питанням з встановлення, налаштування та роботи клієнт-банку</li>
+					<div class="work_company">
+						<h4 class ="work_position">Manager <span class="work_company_name">Alfa-Bank JSC</span> </h4>
+						<p class="work_period">Листопад 2019 - Грудень 2021 <b>|</b> Україна, Черкаси </p>
+						<ul class="work_list">
+							<li class="work_list__item">Консультація портфелю клієнтів по банківським питанням</li>
+							<li class="work_list__item">Супроводження і моніторинг успішної обробки гривневих, валютних операцій, з/п відомостей</li>
+							<li class="work_list__item">Супроводження і консультація по питанням погодження валютних контрактів</li>
+							<li class="work_list__item">Залучення відділів до вирішення питання клієнта</li>
+							<li class="work_list__item">Допомога в проведенні операцій з банківськими картами</li>
+							<li class="work_list__item">Консультація по технічним питанням з встановлення, налаштування та роботи клієнт-банку</li>
 						</ul>
 					</div>
 					<!-- * Company 2 * -->
-					<div>
-						<h4>Спеціаліст відділу технічної підтримки клієнтів - юридичних осіб</h4>
-						<p>Квітень 2017 - Жовтень 2019 (з перервою на декрет ) | ПАТ "Укрсоцбанк", Черкаси</p>
-						<ul>
-							<li>
+					<div class="work_company">
+						<h4 class ="work_position">Manager <span class="work_company_name">Ukrsocbank PJSC</span> </h4>
+						<p class="work_period">Квітень 2017 - Жовтень 2019 (з перервою на декрет ) <b>|</b> Україна, Черкаси</p>
+						<ul class="work_list">
+							<li class="work_list__item">
 								Консультація клієнтів -юридичних осіб по продуктам банку (карти, рахунки, депозити, банківські гарантій,
 								еквайринг)
 							</li>
-							<li>Консультація по налаштуванню клієнт-банку (налаштування Java, криптографічних бібліотек)</li>
-							<li>Консультація по роботі в системі клієнт-банк (створення платежів, з/п відомостей, тощо)</li>
+							<li class="work_list__item">Консультація по налаштуванню клієнт-банку (налаштування Java, криптографічних бібліотек)</li>
+							<li class="work_list__item">Консультація по роботі в системі клієнт-банк (створення платежів, з/п відомостей, тощо)</li>
 						</ul>
 					</div>
 					<!-- TODO Company 3 * -->
-					<div>
-						<h4>Головний економіст</h4>
-						<p>Жовтень 2016 - Квітень 2017 | ПАТ "Укрсоцбанк", Черкаси</p>
-						<ul>
-							<li>Консультація клієнтів по продуктам та послугам банку (фіз. особи)</li>
-							<li>Продаж банківських продуктів та послуг при вхідних дзвінках</li>
-							<li>Консультація клієнтів по системі Інтернет-банкінгу</li>
+					<div class="work_company">
+						<h4 class ="work_position">Chief Economist <span class="work_company_name">Ukrsocbank PJSC</span> </h4>
+						<p class="work_period">Жовтень 2016 - Квітень 2017 <b>|</b> Україна, Черкаси</p>
+						<ul class="work_list">
+							<li class="work_list__item">Консультація клієнтів по продуктам та послугам банку (фіз. особи)</li>
+							<li class="work_list__item">Продаж банківських продуктів та послуг при вхідних дзвінках</li>
+							<li class="work_list__item">Консультація клієнтів по системі Інтернет-банкінгу</li>
 						</ul>
 					</div>
 				</div>
 				<!-- TODO Education * -->
-				<div>
-					<h3>Освіта</h3>
-					<div>
-						<h4>Черкаський Державний Технологічний Університет</h4>
-						<p>Менеджер з проектів та програм</p>
-						<p>Вересень 2007 - Червень 2008 | Магістр</p>
+				<div class="education">
+					<h3 class="main_title">Education</h3>
+					<div class="university">
+						<h4 class="university_name">Черкаський Державний Технологічний Університет</h4>
+						<p class="university_speciality">Менеджер з проектів та програм</p>
+						<p class="university_period">Вересень 2007 - Червень 2008 <b>|</b> Магістр</p>
 					</div>
-					<div>
-						<h4>Черкаський Державний Технологічний Університет</h4>
-						<p>Комп'ютерна інженерія</p>
-						<p>Вересень 2004 - Червень 2007 | Бакалавр</p>
+					<div class="university">
+						<h4 class="university_name">Черкаський Державний Технологічний Університет</h4>
+						<p class="university_speciality">Комп'ютерна інженерія</p>
+						<p class="university_period">Вересень 2004 - Червень 2007 <b>|</b> Бакалавр</p>
 					</div>
-          <div>
-						<h4>Інститут соціального управління, економіки і права</h4>
-						<p>Системне програмування</p>
-						<p>Вересень 2003 - Червень 2004</p>
+					<div class="university">
+						<h4 class="university_name">Інститут соціального управління, економіки і права</h4>
+						<p class="university_speciality">Системне програмування</p>
+						<p class="university_period">Вересень 2003 - Червень 2004</p>
 					</div>
 				</div>
 			</main>
