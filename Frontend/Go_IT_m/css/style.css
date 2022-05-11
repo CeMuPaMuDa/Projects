@@ -161,6 +161,7 @@ body {
 .work_list {
 	padding: 0;
 	margin-left: 15px;
+	width: 525px;
 }
 .work_list__item {
 	font-weight: 400;
