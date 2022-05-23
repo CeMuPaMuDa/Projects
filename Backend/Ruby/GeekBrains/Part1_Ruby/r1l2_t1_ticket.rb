@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Ticket
   def date
     '12.05.2022'
@@ -29,4 +31,3 @@ puts "#{ticket.row} ряд"
 puts "#{ticket.seat} место"
 puts "Цена билета: #{ticket.price} грн"
 puts 'Хорошего просмотра!'
-
